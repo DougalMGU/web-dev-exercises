@@ -1,0 +1,46 @@
+/* import custom Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
+
+/* Reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This ensures padding and borders are included in the element's total width and height */
+}
+
+/* Set root styles */
+html {
+  font-size: 16px;
+}
+
+/* Overall styles */
+body {
+  font-family: "Ubuntu", Verdana, sans-serif;
+}
+
+.title-space {
+  margin-bottom: 1rem;
+}
+
+.line-space {
+  margin-bottom: 1.5rem;
+}
+
+.p-space {
+  margin-bottom: 3rem;
+}
+
+button {
+  padding: 0.3rem 1.5rem;
+  background-color: #0385c6;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(229, 145, 0);
+  color: black;
+}
