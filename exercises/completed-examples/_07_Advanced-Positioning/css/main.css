@@ -131,6 +131,41 @@ header {
   visibility: visible;
 }
 
+/* Grid Section */
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Mobile view: single column layout */
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet view: two columns layout */
+@media (min-width: 601px) and (max-width: 900px) {
+  .grid-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop view: three columns layout */
+@media (min-width: 901px) {
+  .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* Footer Styling */
 .footer {
   display: flex;
