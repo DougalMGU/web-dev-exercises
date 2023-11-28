@@ -94,6 +94,34 @@ header {
   color: aqua;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -0.5rem;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  width: auto;
+  background-color: #07121d;
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
 
 /* Footer Styling */
 .footer {

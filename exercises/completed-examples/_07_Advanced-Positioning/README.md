@@ -44,3 +44,37 @@ Give the <body> a min-height of 100vh
 Remove the display block from '.content' class and give it flex of 1
 Give the '.footer' class display of flex with flex-direction column
 Give the '.footer' class justify-content of flex-end
+
+5. Dropdown HTML
+Give a 'dropdown' class to the <li> of the About <a>
+Add a <ul> with class 'dropdown-menu' after the About <a> within the <li>
+Add three <li> inside the <ul> each with an <a> "Sublink 1", "Sublink 2", etc.
+
+6. Dropdown CSS
+Add a 'dropdown' class selector after the menu selectors in main.css
+Give it position relative and display inline-flex
+Add a 'dropdown-menu' class selector after, and give it:
+  position: absolute;
+  top: 100%;
+  left: -0.5rem;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  width: auto;
+  background-color: #07121d;
+  list-style: none;
+
+After that, add:
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+After that, add:
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
