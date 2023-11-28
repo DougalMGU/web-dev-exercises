@@ -15,6 +15,9 @@ html {
 
 /* Overall styles */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Ubuntu", Verdana, sans-serif;
 }
 
@@ -89,4 +92,20 @@ header {
 
 .menu a.current {
   color: aqua;
+}
+
+
+/* Footer Styling */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 200px;
+  background-color: #07121d;
+  padding: 1rem 2rem;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
 }

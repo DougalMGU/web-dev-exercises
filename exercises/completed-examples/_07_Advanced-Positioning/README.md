@@ -33,7 +33,14 @@ Remove the #contact-item declaration
 
 3. Fixed Nav
 In the index.html, duplicate the image twice to add more vertical content to the page
+
+4. Footer CSS
 Add position fixed with top and left set to 0 to the 'header'
 Add width of 100vw to the header
-
-
+Move the Footer styling from 'inline-blocks.css' to 'main.css'
+Remove the margin properties that use calc()
+Give the <body> display of flex and flex-direction of column
+Give the <body> a min-height of 100vh
+Remove the display block from '.content' class and give it flex of 1
+Give the '.footer' class display of flex with flex-direction column
+Give the '.footer' class justify-content of flex-end

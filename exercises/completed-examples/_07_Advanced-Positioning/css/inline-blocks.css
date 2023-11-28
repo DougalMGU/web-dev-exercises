@@ -1,6 +1,6 @@
 /* content section */
 .content {
-  display: block;
+  flex: 1;
   padding: 2rem 4rem;
   /* height = vh - nav padding - logo font size - footer height */
   height: calc(100vh - 2rem - 1.5rem - 200px);
@@ -33,22 +33,4 @@ button {
 button:hover {
     background-color: rgb(229, 145, 0);
     color: black;
-}
-
-
-
-/* footer section */
-.footer {
-  display: block;
-  min-height: 200px;
-  /* height: calc(100vh - 2rem - 1.5rem - 4rem - 420px); */
-  background-color: #07121d;
-  padding: 1rem 2rem;
-}
-
-.footer p {
-  text-align: center;
-  /* margin-top = footer height - footer padding - text size); */
-  margin-top: calc(200px - 2rem - 1.5em);
-  color: white;
 }
