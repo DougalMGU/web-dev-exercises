@@ -104,11 +104,16 @@ header {
   top: 100%;
   left: -0.5rem;
   z-index: 1;
-  display: none;
+  display: flex;
   flex-direction: column;
   width: auto;
   background-color: #07121d;
   list-style: none;
+
+  opacity: 0;
+  transform: translateY(-30px);
+  visibility: hidden;
+  transition: opacity 1s, transform 0.5s;
 }
 
 .dropdown-menu a {
@@ -121,6 +126,9 @@ header {
 
 .dropdown:hover .dropdown-menu {
   display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 /* Footer Styling */
