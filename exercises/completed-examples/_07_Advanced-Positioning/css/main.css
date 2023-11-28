@@ -44,3 +44,49 @@ button:hover {
   background-color: rgb(229, 145, 0);
   color: black;
 }
+
+/* Nav Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #07121d;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:visited {
+  color: white;
+}
+
+.menu a:hover {
+  color: rgb(229, 145, 0);
+}
+
+.menu a:active {
+  color: rgb(92, 229, 0);
+}
+
+.menu a.current {
+  color: aqua;
+}
