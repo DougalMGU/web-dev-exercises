@@ -1,0 +1,84 @@
+/* Base styles for mobile */
+.content {
+    display: block;
+    padding: 5rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.img-box,
+.txt-box,
+.btn-box {
+    margin-bottom: 20px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+
+/* Tablet screens */
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+        margin: 0 8vw;
+    }
+
+    .img-box,
+    .txt-box,
+    .btn-box {
+        margin-bottom: 0px;
+    }
+
+    .img-box {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 48%;
+    }
+
+    .txt-box {
+        flex-basis: 45%;
+        text-align: left;
+    }
+
+    .image {
+        width: 110%;
+        /* slightly bigger */
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+
+    .img-box,
+    .txt-box,
+    .btn-box {
+        margin-bottom: 0px;
+    }
+
+    .img-box {
+        flex-basis: 40%;
+    }
+
+    .txt-box {
+        flex-basis: 55%;
+    }
+
+    .image {
+        max-width: 500px;
+        /* much larger */
+    }
+
+    .btn-box {
+        text-align: right;
+    }
+}
